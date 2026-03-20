@@ -10,15 +10,23 @@
     <link rel="apple-touch-icon" href="images/web_regen_favicon.png">
     <style>
       :root {
-        --farm-green: #2d5a27;
-        --soil-brown: #4b3621;
+        --text-color: #f8f9fa; /* Light text for dark background */
+        --background-color: #212529; /* Dark background */
+        --secondary-background-color: #343a40; /* Slightly lighter dark for contrast */
+        --farm-green: #4CAF50; /* A vibrant green for accents */
+        --soil-brown: #6D4C41; /* A rich brown */
+      }
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
       }
       nav {
         border-bottom: 5px solid var(--farm-green);
+        background-color: var(--secondary-background-color);
       }
       .logo-text {
         font-size: 0.9rem;
-        color: #555;
+        color: var(--text-color);
         line-height: 1.4;
       }
       .gallery-img {
